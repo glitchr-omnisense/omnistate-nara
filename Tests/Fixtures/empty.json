@@ -1,0 +1,13 @@
+{
+  "body": {
+    "hits": {
+      "total": {
+        "value": 0,
+        "relation": "eq"
+      },
+      "max_score": null,
+      "hits": []
+    }
+  },
+  "statusCode": 200
+}

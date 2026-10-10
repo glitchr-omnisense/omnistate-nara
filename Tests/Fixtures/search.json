@@ -1,0 +1,1238 @@
+{
+  "body": {
+    "hits": {
+      "total": {
+        "value": 2257,
+        "relation": "eq"
+      },
+      "max_score": null,
+      "hits": [
+        {
+          "_index": "nac-records2",
+          "_id": "54373887",
+          "_score": 112.44309,
+          "_source": {
+            "metadata": {
+              "fileName": "NAC_Delta2_0991.xml",
+              "controlGroup": {
+                "indexName": "records",
+                "type": "recordGroup",
+                "naId": 344
+              },
+              "ingestTime": "2024-11-19 15:12:57.188546",
+              "uuid": "d83d1cc2-d919-42c2-9e0d-2e563d5b8967"
+            },
+            "record": {
+              "onlineResources": [
+                {
+                  "note": "This file was scanned as part of a collaboration effort between Fold3 and the National Archives.",
+                  "description": "Fold3",
+                  "url": "https://www.fold3.com/image/17222473"
+                }
+              ],
+              "levelOfDescription": "fileUnit",
+              "recordType": "description",
+              "useRestriction": {
+                "status": "Unrestricted"
+              },
+              "title": "Revolutionary War Pension and Bounty Land Warrant Application File S. 21155, John Darwin, S.C. Va.",
+              "physicalOccurrences": [
+                {
+                  "referenceUnits": [
+                    {
+                      "address2": "7th and Pennsylvania Avenue NW",
+                      "city": "Washington",
+                      "phone": "202-357-5385",
+                      "address1": "National Archives Building",
+                      "postalCode": "20408",
+                      "name": "National Archives at Washington, DC - Textual Reference",
+                      "state": "DC",
+                      "fax": "202-357-5936",
+                      "email": "Archives1reference@nara.gov"
+                    }
+                  ],
+                  "mediaOccurrences": [
+                    {
+                      "generalMediaTypes": [
+                        "Loose Sheets"
+                      ],
+                      "specificMediaType": "Paper"
+                    }
+                  ],
+                  "copyStatus": "Preservation-Reproduction-Reference"
+                }
+              ],
+              "accessRestriction": {
+                "status": "Unrestricted"
+              },
+              "dataControlGroup": {
+                "groupId": "ou=RDTP1,ou=groups",
+                "groupCd": "RDTP1"
+              },
+              "generalRecordsTypes": [
+                "Textual Records"
+              ],
+              "microformPublications": [
+                {
+                  "identifier": "M804",
+                  "note": "The start of this file can be found on Roll 743.",
+                  "title": "M804 - Revolutionary War Pension and Bounty-Land Warrant Application Files"
+                }
+              ],
+              "variantControlNumbers": [
+                {
+                  "number": "Fold3 2016",
+                  "type": "Search Identifier"
+                }
+              ],
+              "digitalObjects": [
+                {
+                  "objectFilename": "4156799_00391.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00391.jpg",
+                  "objectFileSize": 3230667,
+                  "objectDesignator": "Fold3 File #17222473",
+                  "objectId": "54373888",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00393.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00393.jpg",
+                  "objectFileSize": 1535545,
+                  "objectDesignator": "Fold3 File #17222474",
+                  "objectId": "54373889",
+                  "objectDescription": "Additional names: John Darwin, Danl Boyd, Bratton, Brent, Hopewell. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00394.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00394.jpg",
+                  "objectFileSize": 3001098,
+                  "objectDesignator": "Fold3 File #17222475",
+                  "objectId": "54373890",
+                  "objectDescription": "Additional names: Dunmore, Powel, B Earle, John Darwin, Mercer, Williams, Marshall, Weadon, Johnston, Mercer J, Weadon. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00395.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00395.jpg",
+                  "objectFileSize": 3142923,
+                  "objectDesignator": "Fold3 File #17222476",
+                  "objectId": "54373891",
+                  "objectDescription": "Additional names: David Bullock, Woodward, Washington. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00396.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00396.jpg",
+                  "objectFileSize": 3013726,
+                  "objectDesignator": "Fold3 File #17222477",
+                  "objectId": "54373892",
+                  "objectDescription": "Additional names: Lacey, Lees, Bratton, Humphrey Barnett, Lacey, Cambridge, Lacey, Morphet, Green, Lacey. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00397.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00397.jpg",
+                  "objectFileSize": 2932846,
+                  "objectDesignator": "Fold3 File #17222478",
+                  "objectId": "54373893",
+                  "objectDescription": "Additional names: John Darwin, Gordan Moore, John Darwin, A Mc Whorter, Gordan Moore, S J Feemster, S J Feemster, Gordan Moore, A Mc Whorter, B J Earle. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00398.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00398.jpg",
+                  "objectFileSize": 1980120,
+                  "objectDesignator": "Fold3 File #17222479",
+                  "objectId": "54373894",
+                  "objectDescription": "Additional names: Lacey, Lacey, Maude Thomison, Bratton, John Darwin, Lacey, Morphet. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00399.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00399.jpg",
+                  "objectFileSize": 1837374,
+                  "objectDesignator": "Fold3 File #17222480",
+                  "objectId": "54373895",
+                  "objectDescription": "Additional names: Peter B Darwin, E W Morgan, John Darwin. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00401.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00401.jpg",
+                  "objectFileSize": 1373666,
+                  "objectDesignator": "Fold3 File #17222481",
+                  "objectId": "54373896",
+                  "objectDescription": "Additional names: Maude Thomison, J Morgan Smith, John Darwin. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00402.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00402.jpg",
+                  "objectFileSize": 1229743,
+                  "objectDesignator": "Fold3 File #17222482",
+                  "objectId": "54373897",
+                  "objectDescription": "Additional names: A Mc Whorter, A Mc Whorter, John Darwin. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00403.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00403.jpg",
+                  "objectFileSize": 1435658,
+                  "objectDesignator": "Fold3 File #17222483",
+                  "objectId": "54373898",
+                  "objectDescription": "Additional names: Jas E Heath, John Darwin. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00404.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00404.jpg",
+                  "objectFileSize": 1610101,
+                  "objectDesignator": "Fold3 File #17222484",
+                  "objectId": "54373899",
+                  "objectDescription": "Additional names: A Mc Whorter, John Darwin. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00405.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00405.jpg",
+                  "objectFileSize": 1734540,
+                  "objectDesignator": "Fold3 File #17222485",
+                  "objectId": "54373900",
+                  "objectDescription": "Additional names: Davd Bullocks. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00406.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00406.jpg",
+                  "objectFileSize": 1653611,
+                  "objectDesignator": "Fold3 File #17222486",
+                  "objectId": "54373901",
+                  "objectDescription": "Additional names: John Darwin, Andrew Mc Whorter, A Mc Whorter. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00407.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00407.jpg",
+                  "objectFileSize": 1469595,
+                  "objectDesignator": "Fold3 File #17222487",
+                  "objectId": "54373902",
+                  "objectDescription": "Additional names: Brentt, Lacy, Thomas, Lacy, John Darwin, Bratton, Wallan, Thompson, Bratton. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00408.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00408.jpg",
+                  "objectFileSize": 2566808,
+                  "objectDesignator": "Fold3 File #17222488",
+                  "objectId": "54373903",
+                  "objectDescription": "Additional names: William Saval, John T Seibels, William Saval, B H Saxon, George Mc Duffie, Geo Mc Duffie. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00409.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00409.jpg",
+                  "objectFileSize": 3059173,
+                  "objectDesignator": "Fold3 File #17222489",
+                  "objectId": "54373904",
+                  "objectDescription": "Additional names: Thompson, Henderson, John Wallard, Bratton, Barnett, John T Seibels, Sumter, John Darwin, Jas Thomas, Wm Tate. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00410.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00410.jpg",
+                  "objectFileSize": 3158189,
+                  "objectDesignator": "Fold3 File #17222490",
+                  "objectId": "54373905",
+                  "objectDescription": "Additional names: John Darwin, John T Seibels, William Saval. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00411.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00411.jpg",
+                  "objectFileSize": 2501848,
+                  "objectDesignator": "Fold3 File #17222491",
+                  "objectId": "54373906",
+                  "objectDescription": "Additional names: James E Heath, John Darwin, James E Heath. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00412.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00412.jpg",
+                  "objectFileSize": 1582009,
+                  "objectDesignator": "Fold3 File #17222492",
+                  "objectId": "54373907",
+                  "objectDescription": "Additional names: J L Edwards, John Darwin. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00413.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00413.jpg",
+                  "objectFileSize": 2356051,
+                  "objectDesignator": "Fold3 File #17222493",
+                  "objectId": "54373908",
+                  "objectDescription": "Additional names: John Darwin. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00414.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00414.jpg",
+                  "objectFileSize": 2670743,
+                  "objectDesignator": "Fold3 File #17222494",
+                  "objectId": "54373909",
+                  "objectDescription": "Additional names: White, Darwin, Darwin, Thomas Johnson, Darwin, David Bullock, Darwin, William White, David Bullock, Darwin, John Darwin. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00415.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00415.jpg",
+                  "objectFileSize": 2626992,
+                  "objectDesignator": "Fold3 File #17222495",
+                  "objectId": "54373910",
+                  "objectDescription": "Additional names: David Bullock, E Pendleton, John Hunter, E Pendleton, David Bullock, John Hunter, Edmund Pendleton. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00416.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00416.jpg",
+                  "objectFileSize": 1342099,
+                  "objectDesignator": "Fold3 File #17222496",
+                  "objectId": "54373911",
+                  "objectDescription": "Additional names: Evans, John Darwin. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00417.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00417.jpg",
+                  "objectFileSize": 1608927,
+                  "objectDesignator": "Fold3 File #17222497",
+                  "objectId": "54373912",
+                  "objectDescription": "Additional names: Rachel Farrow. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00418.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00418.jpg",
+                  "objectFileSize": 1691356,
+                  "objectDesignator": "Fold3 File #17222498",
+                  "objectId": "54373913",
+                  "objectDescription": "Additional names: Magill, Donoho, John G Enloe, John W Magill, Paten B Dowin, Thomas S Donoho, John G Enloe, A S Wallace, John Darwin, A S Wallace, John R Mc Payton. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00419.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00419.jpg",
+                  "objectFileSize": 1756011,
+                  "objectDesignator": "Fold3 File #17222499",
+                  "objectId": "54373914",
+                  "objectDescription": "Additional names: John V Cowell, R J Brent, Donoho, Donoho, C Drew, John Dick, Edward Cowell, H C Johnson, Thomas Dowling, Peter Force, John C Berry, J P Brawley, Gales, Seaton, Magill, A L White, T G Whitehead, R W Latham. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00420.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00420.jpg",
+                  "objectFileSize": 1583830,
+                  "objectDesignator": "Fold3 File #17222500",
+                  "objectId": "54373915",
+                  "objectDescription": "Additional names: Audley Hamilton, J Morgan Smith, J Morgan Smith, John Darwin, D Smith. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00421.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00421.jpg",
+                  "objectFileSize": 1663789,
+                  "objectDesignator": "Fold3 File #17222501",
+                  "objectId": "54373916",
+                  "objectDescription": "Additional names: John Darwin. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00422.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00422.jpg",
+                  "objectFileSize": 1606743,
+                  "objectDesignator": "Fold3 File #17222502",
+                  "objectId": "54373917",
+                  "objectDescription": "Additional names: Robert Lewis, Geo Washington. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00423.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00423.jpg",
+                  "objectFileSize": 1556967,
+                  "objectDesignator": "Fold3 File #17222503",
+                  "objectId": "54373918",
+                  "objectDescription": "Additional names: Maude Thomison. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00424.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00424.jpg",
+                  "objectFileSize": 1800303,
+                  "objectDesignator": "Fold3 File #17222504",
+                  "objectId": "54373919",
+                  "objectDescription": "Additional names: Mercer, Thomas Johnston, Powel, Marshall, Weadon, Lacey, Bratton, Darwin, John Darwin, Lacey, Lacey, Morphet. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "4156799_00425.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/87/3738/54373887/content/23/M804-RevolutionaryWarPensionAppFiles/M804_0743/images/4156799_00425.jpg",
+                  "objectFileSize": 1824124,
+                  "objectDesignator": "Fold3 File #17222505",
+                  "objectId": "54373920",
+                  "objectDescription": "Additional names: J Morgan Smith, Darwin. Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                }
+              ],
+              "ancestors": [
+                {
+                  "inclusiveStartDate": {
+                    "year": 1773,
+                    "logicalDate": "1773-01-01"
+                  },
+                  "distance": 2,
+                  "levelOfDescription": "recordGroup",
+                  "recordGroupNumber": 15,
+                  "inclusiveEndDate": {
+                    "year": 2007,
+                    "logicalDate": "2007-12-31"
+                  },
+                  "title": "Records of the Department of Veterans Affairs",
+                  "naId": 344
+                },
+                {
+                  "inclusiveStartDate": {
+                    "dateQualifier": "ca.",
+                    "year": 1800,
+                    "logicalDate": "1800-01-01"
+                  },
+                  "distance": 1,
+                  "levelOfDescription": "series",
+                  "creators": [
+                    {
+                      "creatorType": "Predecessor",
+                      "heading": "War Department. Military Bounty Lands and Pension Branch. ca. 1810-1815",
+                      "abolishDate": {
+                        "year": 1815,
+                        "logicalDate": "1815-12-31"
+                      },
+                      "authorityType": "organization",
+                      "establishDate": {
+                        "year": 1810,
+                        "logicalDate": "1810-01-01"
+                      },
+                      "naId": 10447255
+                    },
+                    {
+                      "creatorType": "Predecessor",
+                      "heading": "War Department. Office of the Secretary. 1789-9/18/1947",
+                      "abolishDate": {
+                        "month": 9,
+                        "year": 1947,
+                        "day": 18,
+                        "logicalDate": "1947-09-18"
+                      },
+                      "authorityType": "organization",
+                      "establishDate": {
+                        "year": 1789,
+                        "logicalDate": "1789-01-01"
+                      },
+                      "naId": 10450628
+                    },
+                    {
+                      "creatorType": "Most Recent",
+                      "heading": "Department of the Interior. Bureau of Pensions. 1849-1930",
+                      "abolishDate": {
+                        "year": 1930,
+                        "logicalDate": "1930-12-31"
+                      },
+                      "authorityType": "organization",
+                      "establishDate": {
+                        "year": 1849,
+                        "logicalDate": "1849-01-01"
+                      },
+                      "naId": 10505832
+                    }
+                  ],
+                  "inclusiveEndDate": {
+                    "dateQualifier": "ca.",
+                    "year": 1912,
+                    "logicalDate": "1912-12-31"
+                  },
+                  "title": "Case Files of Pension and Bounty-Land Warrant Applications Based on Revolutionary War Service",
+                  "naId": 300022
+                }
+              ],
+              "naId": 54373887
+            }
+          },
+          "sort": [
+            112.44309,
+            "54373887"
+          ]
+        },
+        {
+          "_index": "nac-records2",
+          "_id": "115683385",
+          "_score": 108.307755,
+          "_source": {
+            "metadata": {
+              "fileName": "NAC_2020_Bulk_FileUnit_115683385.xml",
+              "controlGroup": {
+                "indexName": "records",
+                "type": "recordGroup",
+                "naId": 344
+              },
+              "ingestTime": "2022-11-17 03:16:30.914332",
+              "uuid": "b9af5423-9bc9-4372-9cd2-c7c53050a05f"
+            },
+            "record": {
+              "onlineResources": [
+                {
+                  "note": "This file was scanned as part of a collaboration effort between Family Search and the National Archives.",
+                  "description": "Fold3",
+                  "url": "https://www.fold3.com/image/270993464"
+                }
+              ],
+              "levelOfDescription": "fileUnit",
+              "recordType": "description",
+              "useRestriction": {
+                "status": "Unrestricted"
+              },
+              "title": "Approved Pension Application File for Margaret Gilbo Darwin, Widow of John Darwin, 12 Battery New York Light Artillery Regiment (Application No. WC43727)",
+              "physicalOccurrences": [
+                {
+                  "referenceUnits": [
+                    {
+                      "address2": "7th and Pennsylvania Avenue NW",
+                      "city": "Washington",
+                      "phone": "202-357-5385",
+                      "address1": "National Archives Building",
+                      "postalCode": "20408",
+                      "name": "National Archives at Washington, DC - Textual Reference",
+                      "state": "DC",
+                      "fax": "202-357-5936",
+                      "email": "Archives1reference@nara.gov"
+                    }
+                  ],
+                  "mediaOccurrences": [
+                    {
+                      "generalMediaTypes": [
+                        "Loose Sheets"
+                      ],
+                      "specificMediaType": "Paper"
+                    }
+                  ],
+                  "copyStatus": "Preservation-Reproduction-Reference"
+                }
+              ],
+              "accessRestriction": {
+                "status": "Unrestricted"
+              },
+              "dataControlGroup": {
+                "groupId": "ou=RDTP1,ou=groups",
+                "groupCd": "RDTP1"
+              },
+              "generalRecordsTypes": [
+                "Textual Records"
+              ],
+              "variantControlNumbers": [
+                {
+                  "number": "Family Search 2018",
+                  "type": "Search Identifier"
+                }
+              ],
+              "digitalObjects": [
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00001.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00001.jpg",
+                  "objectFileSize": 5637653,
+                  "objectDesignator": "Fold3 File #270993464",
+                  "objectId": "115683386",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00003.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00003.jpg",
+                  "objectFileSize": 2860989,
+                  "objectDesignator": "Fold3 File #270993467",
+                  "objectId": "115683387",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00004.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00004.jpg",
+                  "objectFileSize": 3046251,
+                  "objectDesignator": "Fold3 File #270993469",
+                  "objectId": "115683388",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00005.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00005.jpg",
+                  "objectFileSize": 2961259,
+                  "objectDesignator": "Fold3 File #270993472",
+                  "objectId": "115683389",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00006.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00006.jpg",
+                  "objectFileSize": 3282067,
+                  "objectDesignator": "Fold3 File #270993475",
+                  "objectId": "115683390",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00007.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00007.jpg",
+                  "objectFileSize": 3004940,
+                  "objectDesignator": "Fold3 File #270993479",
+                  "objectId": "115683391",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00008.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00008.jpg",
+                  "objectFileSize": 2245577,
+                  "objectDesignator": "Fold3 File #270993483",
+                  "objectId": "115683392",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00009.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00009.jpg",
+                  "objectFileSize": 2319131,
+                  "objectDesignator": "Fold3 File #270993486",
+                  "objectId": "115683393",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00010.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00010.jpg",
+                  "objectFileSize": 1753680,
+                  "objectDesignator": "Fold3 File #270993489",
+                  "objectId": "115683394",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00011.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00011.jpg",
+                  "objectFileSize": 922519,
+                  "objectDesignator": "Fold3 File #270993492",
+                  "objectId": "115683395",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00012.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00012.jpg",
+                  "objectFileSize": 1679527,
+                  "objectDesignator": "Fold3 File #270993493",
+                  "objectId": "115683396",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00013.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00013.jpg",
+                  "objectFileSize": 1016991,
+                  "objectDesignator": "Fold3 File #270993498",
+                  "objectId": "115683397",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00014.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00014.jpg",
+                  "objectFileSize": 996256,
+                  "objectDesignator": "Fold3 File #270993501",
+                  "objectId": "115683398",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00015.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00015.jpg",
+                  "objectFileSize": 1123018,
+                  "objectDesignator": "Fold3 File #270993502",
+                  "objectId": "115683399",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00016.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00016.jpg",
+                  "objectFileSize": 1131501,
+                  "objectDesignator": "Fold3 File #270993504",
+                  "objectId": "115683400",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00017.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00017.jpg",
+                  "objectFileSize": 1086698,
+                  "objectDesignator": "Fold3 File #270993506",
+                  "objectId": "115683401",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00018.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00018.jpg",
+                  "objectFileSize": 1144388,
+                  "objectDesignator": "Fold3 File #270993508",
+                  "objectId": "115683402",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00019.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00019.jpg",
+                  "objectFileSize": 2141610,
+                  "objectDesignator": "Fold3 File #270993510",
+                  "objectId": "115683403",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00020.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00020.jpg",
+                  "objectFileSize": 2336377,
+                  "objectDesignator": "Fold3 File #270993512",
+                  "objectId": "115683404",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00021.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00021.jpg",
+                  "objectFileSize": 796004,
+                  "objectDesignator": "Fold3 File #270993514",
+                  "objectId": "115683405",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00022.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00022.jpg",
+                  "objectFileSize": 2993344,
+                  "objectDesignator": "Fold3 File #270993516",
+                  "objectId": "115683406",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00023.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00023.jpg",
+                  "objectFileSize": 2889427,
+                  "objectDesignator": "Fold3 File #270993519",
+                  "objectId": "115683407",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00024.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00024.jpg",
+                  "objectFileSize": 2859586,
+                  "objectDesignator": "Fold3 File #270993521",
+                  "objectId": "115683408",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00025.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00025.jpg",
+                  "objectFileSize": 2847938,
+                  "objectDesignator": "Fold3 File #270993523",
+                  "objectId": "115683409",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00026.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00026.jpg",
+                  "objectFileSize": 780012,
+                  "objectDesignator": "Fold3 File #270993525",
+                  "objectId": "115683410",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00027.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00027.jpg",
+                  "objectFileSize": 756199,
+                  "objectDesignator": "Fold3 File #270993526",
+                  "objectId": "115683411",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00028.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00028.jpg",
+                  "objectFileSize": 833583,
+                  "objectDesignator": "Fold3 File #270993528",
+                  "objectId": "115683412",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00029.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00029.jpg",
+                  "objectFileSize": 1261284,
+                  "objectDesignator": "Fold3 File #270993529",
+                  "objectId": "115683413",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00030.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00030.jpg",
+                  "objectFileSize": 1162819,
+                  "objectDesignator": "Fold3 File #270993531",
+                  "objectId": "115683414",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00031.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00031.jpg",
+                  "objectFileSize": 3890164,
+                  "objectDesignator": "Fold3 File #270993533",
+                  "objectId": "115683415",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00032.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00032.jpg",
+                  "objectFileSize": 3519701,
+                  "objectDesignator": "Fold3 File #270993535",
+                  "objectId": "115683416",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00033.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00033.jpg",
+                  "objectFileSize": 2779560,
+                  "objectDesignator": "Fold3 File #270993537",
+                  "objectId": "115683417",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00034.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00034.jpg",
+                  "objectFileSize": 3129350,
+                  "objectDesignator": "Fold3 File #270993539",
+                  "objectId": "115683418",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00035.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00035.jpg",
+                  "objectFileSize": 1482420,
+                  "objectDesignator": "Fold3 File #270993541",
+                  "objectId": "115683419",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00036.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00036.jpg",
+                  "objectFileSize": 1514116,
+                  "objectDesignator": "Fold3 File #270993543",
+                  "objectId": "115683420",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00037.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00037.jpg",
+                  "objectFileSize": 3075577,
+                  "objectDesignator": "Fold3 File #270993544",
+                  "objectId": "115683421",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00038.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00038.jpg",
+                  "objectFileSize": 3251608,
+                  "objectDesignator": "Fold3 File #270993546",
+                  "objectId": "115683422",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00039.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00039.jpg",
+                  "objectFileSize": 2859769,
+                  "objectDesignator": "Fold3 File #270993548",
+                  "objectId": "115683423",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00040.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00040.jpg",
+                  "objectFileSize": 857466,
+                  "objectDesignator": "Fold3 File #270993550",
+                  "objectId": "115683424",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00041.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00041.jpg",
+                  "objectFileSize": 3033479,
+                  "objectDesignator": "Fold3 File #270993552",
+                  "objectId": "115683425",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00042.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00042.jpg",
+                  "objectFileSize": 3249460,
+                  "objectDesignator": "Fold3 File #270993554",
+                  "objectId": "115683426",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00043.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00043.jpg",
+                  "objectFileSize": 2953670,
+                  "objectDesignator": "Fold3 File #270993555",
+                  "objectId": "115683427",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00044.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00044.jpg",
+                  "objectFileSize": 3193220,
+                  "objectDesignator": "Fold3 File #270993556",
+                  "objectId": "115683428",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00045.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00045.jpg",
+                  "objectFileSize": 3296136,
+                  "objectDesignator": "Fold3 File #270993557",
+                  "objectId": "115683429",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00046.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00046.jpg",
+                  "objectFileSize": 3229331,
+                  "objectDesignator": "Fold3 File #270993558",
+                  "objectId": "115683430",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00047.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00047.jpg",
+                  "objectFileSize": 845942,
+                  "objectDesignator": "Fold3 File #270993559",
+                  "objectId": "115683431",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00048.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00048.jpg",
+                  "objectFileSize": 2191047,
+                  "objectDesignator": "Fold3 File #270993560",
+                  "objectId": "115683432",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00049.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00049.jpg",
+                  "objectFileSize": 2256238,
+                  "objectDesignator": "Fold3 File #270993561",
+                  "objectId": "115683433",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00050.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00050.jpg",
+                  "objectFileSize": 1280890,
+                  "objectDesignator": "Fold3 File #270993562",
+                  "objectId": "115683434",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                },
+                {
+                  "objectFilename": "WC43727-DARWIN-John_00051.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialz/partnerships/Civil_War_Pensions-Paper/0007/TB124/WC43727-DARWIN-John/WC43727-DARWIN-John/images/WC43727-DARWIN-John_00051.jpg",
+                  "objectFileSize": 389295,
+                  "objectDesignator": "Fold3 File #270993563",
+                  "objectId": "115683435",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                }
+              ],
+              "ancestors": [
+                {
+                  "inclusiveStartDate": {
+                    "year": 1773,
+                    "logicalDate": "1773-01-01"
+                  },
+                  "distance": 2,
+                  "levelOfDescription": "recordGroup",
+                  "recordGroupNumber": 15,
+                  "inclusiveEndDate": {
+                    "year": 2007,
+                    "logicalDate": "2007-12-31"
+                  },
+                  "title": "Records of the Department of Veterans Affairs",
+                  "naId": 344
+                },
+                {
+                  "inclusiveStartDate": {
+                    "year": 1861,
+                    "logicalDate": "1861-01-01"
+                  },
+                  "distance": 1,
+                  "levelOfDescription": "series",
+                  "creators": [
+                    {
+                      "creatorType": "Most Recent",
+                      "heading": "Veterans Administration. (7/21/1930 - 3/15/1989)",
+                      "abolishDate": {
+                        "month": 3,
+                        "year": 1989,
+                        "day": 15,
+                        "logicalDate": "1989-03-15"
+                      },
+                      "authorityType": "organization",
+                      "establishDate": {
+                        "month": 7,
+                        "year": 1930,
+                        "day": 21,
+                        "logicalDate": "1930-07-21"
+                      },
+                      "naId": 10461938
+                    },
+                    {
+                      "creatorType": "Predecessor",
+                      "heading": "Department of the Interior. Bureau of Pensions. 1849-1930",
+                      "abolishDate": {
+                        "year": 1930,
+                        "logicalDate": "1930-12-31"
+                      },
+                      "authorityType": "organization",
+                      "establishDate": {
+                        "year": 1849,
+                        "logicalDate": "1849-01-01"
+                      },
+                      "naId": 10505832
+                    }
+                  ],
+                  "inclusiveEndDate": {
+                    "year": 1934,
+                    "logicalDate": "1934-12-31"
+                  },
+                  "title": "Case Files of Approved Pension Applications of Widows and Other Dependents of the Army and Navy Who Served Mainly in the Civil War and the War With Spain",
+                  "naId": 300020
+                }
+              ],
+              "naId": 115683385
+            }
+          },
+          "sort": [
+            108.307755,
+            "115683385"
+          ]
+        },
+        {
+          "_index": "nac-records0",
+          "_id": "27696821",
+          "_score": 107.458015,
+          "_source": {
+            "metadata": {
+              "fileName": "NAC_2020_Bulk_Desc201007_multi.xml",
+              "controlGroup": {
+                "indexName": "records",
+                "type": "recordGroup",
+                "naId": 438
+              },
+              "ingestTime": "2022-11-17 02:09:50.584174",
+              "uuid": "1483c54d-285c-498e-bbab-57eccc93811e"
+            },
+            "record": {
+              "onlineResources": [
+                {
+                  "note": "This file was scanned as part of a collaboration effort between Fold3 and the National Archives.",
+                  "description": "Fold3",
+                  "url": "http://www.fold3.com/image/281948700"
+                }
+              ],
+              "levelOfDescription": "fileUnit",
+              "recordType": "description",
+              "useRestriction": {
+                "status": "Unrestricted"
+              },
+              "title": "Darwin, John - State: [Blank] - Year: [Blank]",
+              "physicalOccurrences": [
+                {
+                  "referenceUnits": [
+                    {
+                      "address2": "7th and Pennsylvania Avenue NW",
+                      "city": "Washington",
+                      "phone": "202-357-5385",
+                      "address1": "National Archives Building",
+                      "postalCode": "20408",
+                      "name": "National Archives at Washington, DC - Textual Reference",
+                      "state": "DC",
+                      "fax": "202-357-5936",
+                      "email": "Archives1reference@nara.gov"
+                    }
+                  ],
+                  "mediaOccurrences": [
+                    {
+                      "generalMediaTypes": [
+                        "Loose Sheets"
+                      ],
+                      "specificMediaType": "Paper"
+                    }
+                  ],
+                  "copyStatus": "Preservation-Reproduction-Reference"
+                }
+              ],
+              "accessRestriction": {
+                "status": "Unrestricted"
+              },
+              "dataControlGroup": {
+                "groupId": "ou=RDTP1,ou=groups",
+                "groupCd": "RDTP1"
+              },
+              "generalRecordsTypes": [
+                "Textual Records"
+              ],
+              "microformPublications": [
+                {
+                  "identifier": "M345",
+                  "note": "The start of this file can be found on Roll 67.",
+                  "title": "M345 - Union Provost Marshal's File of Papers Relating to Individual Civilians."
+                }
+              ],
+              "variantControlNumbers": [
+                {
+                  "number": "Fold3 2014",
+                  "type": "Search Identifier"
+                }
+              ],
+              "digitalObjects": [
+                {
+                  "objectFilename": "0502.jpg",
+                  "objectUrl": "https://catalog.archives.gov/medialive/21/6968/27696821/content/TB142/M345-UnionPapers_CitizenFiles/M345_0067/images/0502.jpg",
+                  "objectFileSize": 12345678,
+                  "objectDesignator": "Fold3 File #281948700",
+                  "objectId": "27696822",
+                  "objectDescription": "Image provided by Fold3.",
+                  "objectType": "Image (JPG)"
+                }
+              ],
+              "ancestors": [
+                {
+                  "inclusiveStartDate": {
+                    "year": 1825,
+                    "logicalDate": "1825-01-01"
+                  },
+                  "distance": 2,
+                  "levelOfDescription": "recordGroup",
+                  "recordGroupNumber": 109,
+                  "inclusiveEndDate": {
+                    "year": 1927,
+                    "logicalDate": "1927-12-31"
+                  },
+                  "title": "War Department Collection of Confederate Records",
+                  "naId": 438
+                },
+                {
+                  "inclusiveStartDate": {
+                    "year": 1861,
+                    "logicalDate": "1861-01-01"
+                  },
+                  "distance": 1,
+                  "levelOfDescription": "series",
+                  "creators": [
+                    {
+                      "creatorType": "Most Recent",
+                      "heading": "War Department. The Adjutant General's Office. 1821-4/28/1904",
+                      "abolishDate": {
+                        "month": 4,
+                        "year": 1904,
+                        "day": 28,
+                        "logicalDate": "1904-04-28"
+                      },
+                      "authorityType": "organization",
+                      "establishDate": {
+                        "year": 1821,
+                        "logicalDate": "1821-01-01"
+                      },
+                      "naId": 10468380
+                    },
+                    {
+                      "creatorType": "Predecessor",
+                      "heading": "War Department. Provost Marshal General's Bureau. 3/3/1863-8/28/1866",
+                      "abolishDate": {
+                        "month": 8,
+                        "year": 1866,
+                        "day": 28,
+                        "logicalDate": "1866-08-28"
+                      },
+                      "authorityType": "organization",
+                      "establishDate": {
+                        "month": 3,
+                        "year": 1863,
+                        "day": 3,
+                        "logicalDate": "1863-03-03"
+                      },
+                      "naId": 10461614
+                    }
+                  ],
+                  "inclusiveEndDate": {
+                    "year": 1867,
+                    "logicalDate": "1867-12-31"
+                  },
+                  "title": "Papers Relating to Citizens",
+                  "naId": 2133278
+                }
+              ],
+              "naId": 27696821
+            }
+          },
+          "sort": [
+            107.458015,
+            "27696821"
+          ]
+        }
+      ]
+    }
+  },
+  "statusCode": 200
+}

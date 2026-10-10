@@ -1,0 +1,45 @@
+{
+    "name": "omnistate/nara",
+    "type": "library",
+    "description": "Omnistate NARA: the National Archives Catalog of the United States (Catalog API v2) - federal files that name a person (pension files, military service records, draft cards, naturalization indexes), with their reference and links to their scanned pages. A catalogue, not civil registration; an API key is needed.",
+    "keywords": [
+        "genealogy",
+        "archives",
+        "national archives",
+        "nara",
+        "united states",
+        "catalog",
+        "omnistate"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnistate": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnistate\\Nara\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnistate\\Nara\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
