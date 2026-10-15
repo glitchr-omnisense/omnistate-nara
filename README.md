@@ -37,4 +37,19 @@ plain PHP, a `MockHttpClient` in a test.
 Keep answers in a cache: `glitchr/omnistate` does (`Omnistate`'s cache, a day by default), and that
 is what keeps a search screen within the month's 10,000 calls.
 
+## Responsibility
+
+This package is an independent, unofficial client: it is not affiliated with, endorsed by or
+sponsored by the U.S. National Archives and Records Administration. It reaches their service on
+behalf of whoever runs it, and it does not redistribute their data beyond the short excerpts
+recorded as test fixtures. Its MIT licence covers this package's code only and grants no right to
+the service or to its data.
+
+Whoever installs and runs this package is responsible for complying with the National Archives
+Catalog API's terms ([its terms of
+use](https://www.archives.gov/research/catalog/help/api#terms-of-use)), for obtaining whatever they
+require (an account, a key, a licence or subscription, an attribution or a citation, a rate limit to
+respect), and for any use made of what it returns. The authors publish it free of charge, make no
+commercial use of it, and accept no liability for how it is used (see [LICENSE](LICENSE)).
+
 Documentation: [docs/](docs/index.md). License: MIT.
