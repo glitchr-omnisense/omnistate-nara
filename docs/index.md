@@ -3,7 +3,7 @@
 ## Installation
 
 ```sh
-composer require glitchr/omnistate omnistate/nara
+composer require omniscient/omnistate omnistate/nara
 ```
 
 In a Symfony application, `OmnistateBundle` registers it when it is installed; its key goes in the
@@ -61,7 +61,7 @@ A `CivilRecord` of kind `OTHER`:
 
 10,000 calls a month per key (NARA's default): past it the key is blocked until the first of the
 next month, and every call answers `UnavailableException` with `retryAfter` set to the seconds
-left until then. `glitchr/omnistate` keeps answers in its cache (a day by default): a person
+left until then. `omniscient/omnistate` keeps answers in its cache (a day by default): a person
 looked for again is not asked again.
 
 ## Errors

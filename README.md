@@ -2,7 +2,7 @@
 
 Federal files that name a person in the [National Archives Catalog](https://catalog.archives.gov)
 of the United States (NARA), through its Catalog API v2, for
-[glitchr/omnistate](https://github.com/glitchr-studio/omnistate).
+[omniscient/omnistate](https://github.com/glitchr-studio/omnistate).
 
 **A catalogue of federal archives, not civil registration.** Births, marriages and deaths in the
 United States are kept by the states and counties; the Catalog holds none of them as such. What it
@@ -21,7 +21,7 @@ $files[0]->url;        // https://catalog.archives.gov/id/54373887
 $files[0]->images;     // the scanned pages, at catalog.archives.gov
 ```
 
-No framework needed: the package requires `glitchr/omnistate` and `symfony/http-client`.
+No framework needed: the package requires `omniscient/omnistate` and `symfony/http-client`.
 `$httpClient` is the HTTP client to call with - the application's, `HttpClient::create()` in
 plain PHP, a `MockHttpClient` in a test.
 
@@ -34,7 +34,7 @@ plain PHP, a `MockHttpClient` in a test.
 | Dates | the span of the file's series; the Catalog does not date the file itself |
 | Access | free, **API key** (header `x-api-key`, ask Catalog_API@nara.gov); **10,000 calls a month** per key, the key blocked until the first of the next month past it |
 
-Keep answers in a cache: `glitchr/omnistate` does (`Omnistate`'s cache, a day by default), and that
+Keep answers in a cache: `omniscient/omnistate` does (`Omnistate`'s cache, a day by default), and that
 is what keeps a search screen within the month's 10,000 calls.
 
 ## Responsibility
