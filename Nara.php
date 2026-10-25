@@ -111,13 +111,14 @@ final class Nara implements CivilRegistryInterface
         if (!preg_match('/^\d{1,15}$/', $identifier)) {
             return null;
         }
-        $record = $this->ask(['naId_is' => $identifier])['body']['hits']['hits'][0]['_source']['record'] ?? null;
+        $record = $this->ask(['naId_is' => $identifier], true)['body']['hits']['hits'][0]['_source']['record'] ?? null;
 
         return \is_array($record) && isset($record['naId']) ? $this->record($record) : null;
     }
 
     /** @return array<string, mixed> */
-    private function ask(array $query): array
+    /** @param bool $find a lookup: a 404 is no such file (an empty answer) */
+    private function ask(array $query, bool $find = false): array
     {
         $headers = ['Accept' => 'application/json'];
         if (null !== $this->apiKey && '' !== $this->apiKey) {
@@ -134,6 +135,9 @@ final class Nara implements CivilRegistryInterface
             }
             if ($status >= 500) {
                 throw new UnavailableException(sprintf('The NARA Catalog answered %d.', $status));
+            }
+            if ($find && 404 === $status) {
+                return [];
             }
             if ($status >= 400) {
                 throw new OmnistateException(sprintf('The NARA Catalog refused the question (%d).', $status));
