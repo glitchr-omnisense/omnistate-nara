@@ -2,7 +2,7 @@
 
 Federal files that name a person in the [National Archives Catalog](https://catalog.archives.gov)
 of the United States (NARA), through its Catalog API v2, for
-[omniscient/omnistate](https://github.com/glitchr-studio/omnistate): pension application files,
+[omnisense/omnistate](https://github.com/glitchr-omnisense/omnistate): pension application files,
 compiled military service records, draft registration cards, indexes to naturalization papers,
 Indian census cards, homestead certificates - and, for many, links to their scanned pages.
 
@@ -24,10 +24,10 @@ its NAID (`https://catalog.archives.gov/id/…`).
 ## Installation
 
 ```sh
-composer require omniscient/omnistate omnistate/nara
+composer require omnisense/omnistate omnistate/nara
 ```
 
-Requires PHP 8.2, `omniscient/omnistate` (1.x) and `symfony/http-client` (6.4, 7 or 8). In a
+Requires PHP 8.2, `omnisense/omnistate` (1.x) and `symfony/http-client` (6.4, 7 or 8). In a
 Symfony application, `OmnistateBundle` registers it when it is installed (tag
 `omnistate.civil_registry`); its key goes in the configuration, read from the environment - never
 written in a versioned file:
