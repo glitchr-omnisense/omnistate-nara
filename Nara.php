@@ -4,6 +4,7 @@ namespace Omnistate\Nara;
 
 use Omnistate\Exception\OmnistateException;
 use Omnistate\Exception\UnavailableException;
+use Omnistate\Http\Redaction;
 use Omnistate\Model\Archive;
 use Omnistate\Model\CivilQuery;
 use Omnistate\Model\CivilRecord;
@@ -150,7 +151,10 @@ final class Nara implements CivilRegistryInterface
 
             return json_decode($body, true, 512, \JSON_THROW_ON_ERROR);
         } catch (ExceptionInterface|\JsonException $e) {
-            throw new UnavailableException('The NARA Catalog did not answer: '.$e->getMessage(), null, $e);
+            // The key, in the request's headers, kept out: the previous a copy of the client's exception, no trace keeping the options.
+            $secrets = array_values(array_filter([(string) $this->apiKey]));
+
+            throw Redaction::withoutArguments(new UnavailableException('The NARA Catalog did not answer: '.Redaction::text($e->getMessage(), $secrets), null, Redaction::copy($e, $secrets)));
         }
     }
 
