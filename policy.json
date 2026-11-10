@@ -1,0 +1,45 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "nara",
+    "rateLimits": [
+        {
+            "max": 10000,
+            "window": "month",
+            "scope": "key",
+            "operations": [],
+            "note": "10,000 calls a month per key, NARA's default; past it the key is blocked until the first of the next month."
+        }
+    ],
+    "rights": {
+        "commercial": "unknown",
+        "openSourceRequired": null,
+        "caching": {
+            "permission": "unknown",
+            "maxTtl": null
+        },
+        "storage": "unknown",
+        "redistribution": "unknown",
+        "attribution": {
+            "required": false,
+            "text": null,
+            "url": null,
+            "where": []
+        },
+        "licence": null
+    },
+    "requirements": {
+        "key": true,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://www.archives.gov/research/catalog/help/api#terms-of-use",
+        "policy": null,
+        "verifiedAt": null,
+        "declaredBy": "maintainer",
+        "contact": "Catalog_API@nara.gov",
+        "notes": "Figures from this package's docs/index.md (its live run of 2026-10-25); the terms were not re-read when the policy was first written (2026-11-10): rights the terms were not read for are unknown."
+    }
+}

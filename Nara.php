@@ -2,6 +2,8 @@
 
 namespace Omnistate\Nara;
 
+use Omnisense\Contracts\Policy\DeclaresUsagePolicyInterface;
+use Omnisense\Contracts\Policy\UsagePolicy;
 use Omnistate\Exception\OmnistateException;
 use Omnistate\Exception\UnavailableException;
 use Omnistate\Http\Redaction;
@@ -36,7 +38,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
  * month. Without a valid key the API answers the Catalog's HTML page with a
  * 200, which is read as unavailable.
  */
-final class Nara implements CivilRegistryInterface
+final class Nara implements CivilRegistryInterface, DeclaresUsagePolicyInterface
 {
     public const URL = 'https://catalog.archives.gov/api/v2';
     public const PAGE = 'https://catalog.archives.gov/id/';
@@ -50,6 +52,12 @@ final class Nara implements CivilRegistryInterface
         private readonly float $timeout = 10,
         private readonly string $url = self::URL,
     ) {
+    }
+
+    /** Its usage policy: policy.json, beside this class. */
+    public function usagePolicy(): UsagePolicy
+    {
+        return UsagePolicy::fromFile(__DIR__.'/policy.json');
     }
 
     public function name(): string
@@ -129,7 +137,7 @@ final class Nara implements CivilRegistryInterface
             $response = $this->http->request('GET', rtrim($this->url, '/').'/records/search', ['query' => $query, 'headers' => $headers, 'timeout' => $this->timeout]);
             $status = $response->getStatusCode();
             if (429 === $status) {
-                throw new UnavailableException('The NARA Catalog refused the call (429): the key\'s monthly quota is spent until the first of the next month.', self::untilNextMonth());
+                throw new UnavailableException('The NARA Catalog refused the call (429): the key\'s monthly quota is spent until the first of the next month.', self::untilNextMonth(), null, 429);
             }
             if (\in_array($status, [401, 403], true)) {
                 throw new UnavailableException(sprintf('The NARA Catalog refused the key (%d).', $status));

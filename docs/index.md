@@ -200,6 +200,14 @@ Not verified: the 429 of a spent quota and the 401/403 the documentation does no
 handling follows NARA's README (the key blocked until the first of the next month);
 `geographicReference` and the other filters of the API, not used.
 
+## Usage policy
+
+`policy.json` (omnisense/contracts' schema), given by `usagePolicy()`: limits 10,000 a month per key.
+The figures are this manual's, read on 2026-10-25; the service's terms were not read again when the
+policy was written (`verifiedAt: null`), so what they say of commercial use, caching and storage is
+`unknown`. Through `Omnistate\Omnistate`, a call over a limit is never made and a 429 holds the next
+calls for its `retryAfter` (core: docs/policies.md); a site adds its own limits with `policies:`.
+
 ## Responsibility
 
 An independent, unofficial client, not affiliated with the U.S. National Archives and Records
