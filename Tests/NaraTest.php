@@ -45,11 +45,12 @@ final class NaraTest extends TestCase
             $asked = urldecode($url);
             $headers = $options['headers'];
 
-            return new MockResponse(file_get_contents(__DIR__.'/Fixtures/search.json'), ['response_headers' => ['content-type' => 'application/json; charset=UTF-8']]);
+            return new MockResponse((string) file_get_contents(__DIR__.'/Fixtures/search.json'), ['response_headers' => ['content-type' => 'application/json; charset=UTF-8']]);
         }), self::KEY);
         $records = $nara->search(new CivilQuery(familyName: 'Darwin', givenName: 'John', dated: Period::years(1775, 1900), limit: 3));
 
         self::assertSame('https://catalog.archives.gov/api/v2/records/search?q=John Darwin&startDate=1775&endDate=1900&limit=3', $asked);
+        self::assertIsArray($headers);
         self::assertContains('x-api-key: '.self::KEY, $headers, 'the key in its header, never in the address');
         self::assertCount(3, $records);
 
@@ -59,9 +60,10 @@ final class NaraTest extends TestCase
         self::assertSame('nara', $pension->source);
         self::assertSame('Revolutionary War Pension and Bounty Land Warrant Application File S. 21155, John Darwin, S.C. Va.', $pension->title);
         self::assertSame('https://catalog.archives.gov/id/54373887', $pension->url);
-        self::assertSame('National Archives at Washington, DC - Textual Reference', $pension->archive?->name);
-        self::assertSame('RG 15, M804, NAID 54373887', $pension->archive?->reference);
-        self::assertSame('NARA', $pension->archive?->code);
+        self::assertNotNull($pension->archive);
+        self::assertSame('National Archives at Washington, DC - Textual Reference', $pension->archive->name);
+        self::assertSame('RG 15, M804, NAID 54373887', $pension->archive->reference);
+        self::assertSame('NARA', $pension->archive->code);
         self::assertNull($pension->date, 'the Catalog dates a file by its series only');
         self::assertSame('1800/1912', (string) $pension->period, 'the series\' span');
         self::assertStringContainsString('Records of the Department of Veterans Affairs — Case Files of Pension and Bounty-Land Warrant Applications', (string) $pension->description);
@@ -81,7 +83,7 @@ final class NaraTest extends TestCase
         $nara = new Nara(new MockHttpClient(function (string $method, string $url) use (&$asked) {
             $asked = urldecode($url);
 
-            return new MockResponse(file_get_contents(__DIR__.'/Fixtures/empty.json'));
+            return new MockResponse((string) file_get_contents(__DIR__.'/Fixtures/empty.json'));
         }), self::KEY);
 
         self::assertSame([], $nara->search(new CivilQuery(familyName: 'Vvqxkj', givenName: 'Zzqxwv', place: 'Ohio', limit: 3, page: 2)));
@@ -94,7 +96,7 @@ final class NaraTest extends TestCase
         $nara = new Nara(new MockHttpClient(function (string $method, string $url) use (&$asked) {
             $asked[] = urldecode($url);
 
-            return new MockResponse(file_get_contents(__DIR__.'/Fixtures/'.(str_contains($url, '115683385') ? 'record' : 'empty').'.json'));
+            return new MockResponse((string) file_get_contents(__DIR__.'/Fixtures/'.(str_contains($url, '115683385') ? 'record' : 'empty').'.json'));
         }), self::KEY);
 
         $file = $nara->find('115683385');
@@ -124,7 +126,8 @@ final class NaraTest extends TestCase
         } catch (UnavailableException $e) {
             self::assertStringContainsString('API key', $e->getMessage());
         }
-        self::assertSame([], array_filter($headers, static fn (string $h) => str_starts_with(strtolower($h), 'x-api-key')), 'no empty key sent');
+        self::assertIsArray($headers);
+        self::assertSame([], array_filter($headers, static fn (mixed $h) => \is_string($h) && str_starts_with(strtolower($h), 'x-api-key')), 'no empty key sent');
     }
 
     public function testAQuotaSpentOrAServiceDownIsUnavailableNotNothing(): void

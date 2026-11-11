@@ -105,8 +105,8 @@ final class Nara implements CivilRegistryInterface, DeclaresUsagePolicyInterface
         ], static fn (mixed $value) => null !== $value && '' !== $value));
 
         $records = [];
-        foreach ($answer['body']['hits']['hits'] ?? [] as $hit) {
-            $record = $hit['_source']['record'] ?? null;
+        foreach (self::items(self::at($answer, 'body', 'hits', 'hits')) as $hit) {
+            $record = self::at($hit, '_source', 'record');
             if (\is_array($record) && \in_array($record['levelOfDescription'] ?? null, self::DOCUMENTS, true)) {
                 $records[] = $this->record($record);
             }
@@ -120,13 +120,17 @@ final class Nara implements CivilRegistryInterface, DeclaresUsagePolicyInterface
         if (!preg_match('/^\d{1,15}$/', $identifier)) {
             return null;
         }
-        $record = $this->ask(['naId_is' => $identifier], true)['body']['hits']['hits'][0]['_source']['record'] ?? null;
+        $record = self::at($this->ask(['naId_is' => $identifier], true), 'body', 'hits', 'hits', 0, '_source', 'record');
 
         return \is_array($record) && isset($record['naId']) ? $this->record($record) : null;
     }
 
-    /** @return array<string, mixed> */
-    /** @param bool $find a lookup: a 404 is no such file (an empty answer) */
+    /**
+     * @param array<string, mixed> $query
+     * @param bool                 $find  a lookup: a 404 is no such file (an empty answer)
+     *
+     * @return array<mixed>
+     */
     private function ask(array $query, bool $find = false): array
     {
         $headers = ['Accept' => 'application/json'];
@@ -157,37 +161,39 @@ final class Nara implements CivilRegistryInterface, DeclaresUsagePolicyInterface
                 throw new UnavailableException('The NARA Catalog answered no data: an API key is needed (x-api-key), and this one is missing or wrong.');
             }
 
-            return json_decode($body, true, 512, \JSON_THROW_ON_ERROR);
+            $answer = json_decode($body, true, 512, \JSON_THROW_ON_ERROR);
+
+            return \is_array($answer) ? $answer : []; // a body opening with "{" is an object: always an array
         } catch (ExceptionInterface|\JsonException $e) {
             // The key, in the request's headers, kept out: the previous a copy of the client's exception, no trace keeping the options.
-            $secrets = array_values(array_filter([(string) $this->apiKey]));
+            $secrets = array_filter([(string) $this->apiKey]);
 
             throw Redaction::withoutArguments(new UnavailableException('The NARA Catalog did not answer: '.Redaction::text($e->getMessage(), $secrets), null, Redaction::copy($e, $secrets)));
         }
     }
 
-    /** @param array<string, mixed> $record a hit's _source.record */
+    /** @param array<mixed> $record a hit's _source.record */
     private function record(array $record): CivilRecord
     {
-        $id = (string) $record['naId'];
+        $id = self::cast($record['naId'] ?? null);
         $series = self::ancestor($record, 'series');
         $group = self::ancestor($record, 'recordGroup');
 
         $scope = $record['scopeAndContentNote'] ?? null;
-        $scope = \is_string($scope) ? trim(preg_replace('/\s+/', ' ', $scope)) : null;
+        $scope = \is_string($scope) ? trim(preg_replace('/\s+/', ' ', $scope) ?? '') : null;
 
-        $holder = $record['physicalOccurrences'][0]['referenceUnits'][0]['name'] ?? 'National Archives and Records Administration';
-        $microfilm = $record['microformPublications'][0]['identifier'] ?? null;
+        $holder = self::at($record, 'physicalOccurrences', 0, 'referenceUnits', 0, 'name') ?? 'National Archives and Records Administration';
+        $microfilm = self::at($record, 'microformPublications', 0, 'identifier');
         $reference = implode(', ', array_filter([
-            isset($group['recordGroupNumber']) ? 'RG '.$group['recordGroupNumber'] : null,
+            isset($group['recordGroupNumber']) ? 'RG '.self::cast($group['recordGroupNumber']) : null,
             \is_string($microfilm) ? $microfilm : null,
             'NAID '.$id,
         ]));
 
         $images = [];
-        foreach ($record['digitalObjects'] ?? [] as $object) {
-            if (isset($object['objectUrl']) && str_starts_with((string) ($object['objectType'] ?? ''), 'Image')) {
-                $images[] = (string) $object['objectUrl'];
+        foreach (self::items($record['digitalObjects'] ?? null) as $object) {
+            if (\is_array($object) && isset($object['objectUrl']) && str_starts_with(self::cast($object['objectType'] ?? ''), 'Image')) {
+                $images[] = self::cast($object['objectUrl']);
             }
         }
 
@@ -195,21 +201,25 @@ final class Nara implements CivilRegistryInterface, DeclaresUsagePolicyInterface
             identifier: $id,
             kind: CivilRecordKind::OTHER,
             source: $this->name(),
-            archive: new Archive((string) $holder, 'NARA', $reference, self::PAGE.$id),
+            archive: new Archive(self::cast($holder), 'NARA', $reference, self::PAGE.$id),
             url: self::PAGE.$id,
             images: $images,
-            title: trim((string) ($record['title'] ?? '')) ?: null,
-            description: implode(' — ', array_filter([$group['title'] ?? null, $series['title'] ?? null, $scope])) ?: null,
+            title: trim(self::cast($record['title'] ?? '')) ?: null,
+            description: implode(' — ', array_filter([self::cast($group['title'] ?? null), self::cast($series['title'] ?? null), $scope])) ?: null,
             period: null === $series ? null : self::span($series),
             raw: $record,
         );
     }
 
-    /** @return array<string, mixed>|null the nearest ancestor of that level */
+    /**
+     * @param array<mixed> $record
+     *
+     * @return array<mixed>|null the nearest ancestor of that level
+     */
     private static function ancestor(array $record, string $level): ?array
     {
-        foreach ($record['ancestors'] ?? [] as $ancestor) {
-            if (($ancestor['levelOfDescription'] ?? null) === $level) {
+        foreach (self::items($record['ancestors'] ?? null) as $ancestor) {
+            if (\is_array($ancestor) && ($ancestor['levelOfDescription'] ?? null) === $level) {
                 return $ancestor;
             }
         }
@@ -217,7 +227,11 @@ final class Nara implements CivilRegistryInterface, DeclaresUsagePolicyInterface
         return null;
     }
 
-    /** The series' inclusive dates: {year, month?, day?}, ca. or not. */
+    /**
+     * The series' inclusive dates: {year, month?, day?}, ca. or not.
+     *
+     * @param array<mixed> $series
+     */
     private static function span(array $series): ?Period
     {
         $from = self::date($series['inclusiveStartDate'] ?? null);
@@ -231,7 +245,7 @@ final class Nara implements CivilRegistryInterface, DeclaresUsagePolicyInterface
 
     private static function date(mixed $date): ?PartialDate
     {
-        return \is_array($date) && isset($date['year']) ? PartialDate::of((int) $date['year'], isset($date['month']) ? (int) $date['month'] : null, isset($date['day']) ? (int) $date['day'] : null) : null;
+        return \is_array($date) && isset($date['year']) ? PartialDate::of(self::integer($date['year']), isset($date['month']) ? self::integer($date['month']) : null, isset($date['day']) ? self::integer($date['day']) : null) : null;
     }
 
     /** Seconds until the first of the next month (UTC), when a spent key is renewed. */
@@ -240,5 +254,45 @@ final class Nara implements CivilRegistryInterface, DeclaresUsagePolicyInterface
         $now = new \DateTimeImmutable('now', new \DateTimeZone('UTC'));
 
         return max(60, $now->modify('first day of next month midnight')->getTimestamp() - $now->getTimestamp());
+    }
+
+    /**
+     * $value[$key][...] ?? null, as PHP reads it: an array's item, a string's
+     * character at an integer offset, null for anything else.
+     */
+    private static function at(mixed $value, string|int ...$keys): mixed
+    {
+        foreach ($keys as $key) {
+            if (\is_array($value) || (\is_string($value) && \is_int($key))) {
+                $value = $value[$key] ?? null;
+            } else {
+                return null;
+            }
+        }
+
+        return $value;
+    }
+
+    /**
+     * What a foreach over the value went through: an array's items, nothing
+     * for anything else (where PHP warned and went on).
+     *
+     * @return array<mixed>
+     */
+    private static function items(mixed $value): array
+    {
+        return \is_array($value) ? $value : [];
+    }
+
+    /** (string) of a scalar, as the answer's values were cast: "" for null, and for an array where PHP gave "Array". */
+    private static function cast(mixed $value): string
+    {
+        return \is_scalar($value) ? (string) $value : '';
+    }
+
+    /** (int) of a scalar, 0 for anything else (an array: where PHP gave 1 for a non-empty one). */
+    private static function integer(mixed $value): int
+    {
+        return \is_scalar($value) ? (int) $value : 0;
     }
 }

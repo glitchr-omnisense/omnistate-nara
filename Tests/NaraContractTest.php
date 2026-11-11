@@ -27,12 +27,12 @@ final class NaraContractTest extends TestCase
         }), ['response_headers' => ['content-type' => 'application/json']])];
     }
 
-    protected function civilQuery(): ?CivilQuery
+    protected function civilQuery(): CivilQuery
     {
         return new CivilQuery(familyName: 'Darwin', givenName: 'John');
     }
 
-    protected function civilIdentifier(): ?string
+    protected function civilIdentifier(): string
     {
         return '115683385';
     }
