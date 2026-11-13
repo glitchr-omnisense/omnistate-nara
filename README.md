@@ -37,6 +37,14 @@ plain PHP, a `MockHttpClient` in a test.
 Keep answers in a cache: `omnisense/omnistate` does (`Omnistate`'s cache, a day by default), and that
 is what keeps a search screen within the month's 10,000 calls.
 
+## Install
+
+```sh
+composer require omnistate/nara
+```
+
+It brings the family's core, `omnisense/omnistate`, and `omnisense/contracts` with it. **An API key is needed** (free, asked from Catalog_API@nara.gov; 10,000 calls a month). The tests run on recorded answers.
+
 ## Responsibility
 
 This package is an independent, unofficial client: it is not affiliated with, endorsed by or
